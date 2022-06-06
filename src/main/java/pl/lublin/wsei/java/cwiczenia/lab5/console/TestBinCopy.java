@@ -10,11 +10,11 @@ public class TestBinCopy {
         FileOutputStream out = null;
 
         try {
-            in = new FileInputStream("sample_1920x1280.tiff");
+            in = new FileInputStream("src/main/sample_1920x1280.tiff");
             out = new FileOutputStream("img_copy.tiff");
             int c;
 
-            while ((c = in.read()) ! = -1) {
+            while ((c = in.read()) != -1) {
                 out.write(c);
             }
         }
